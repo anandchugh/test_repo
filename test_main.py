@@ -8,7 +8,7 @@ class Testing(unittest.TestCase):
 
     def test_2(self):
         result = sum(1,2)
-        self.assertEqual(result, 3)
+        self.assertEqual(result, 4)
 
 
 if __name__ == '__main__':
