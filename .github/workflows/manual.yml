@@ -27,4 +27,4 @@ jobs:
         env:
           name: ${{github.event.inputs.envName}}
         run: |
-          python -m main.py
+          python main.py
