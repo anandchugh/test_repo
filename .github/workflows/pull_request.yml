@@ -1,12 +1,11 @@
-name: Python application
+name: Pull Request
 
 on:
-  push:
+  pull_request:
     branches: [ main ]
 
 jobs:
-  build:
-
+  lintTest:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,6 +28,3 @@ jobs:
     - name: Test with pytest
       run: |
         python -m unittest discover
-    - name: Execute
-      run: |
-        python main.py
